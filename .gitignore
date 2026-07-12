@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# 本地备份 / 预览，不上线
+*-bak.png
+*_bak.png
+assets/charts/_preview*
+assets/charts/*-bak.png
+assets/closing-bg-male-bak.png
+assets/charts/contract-cloud-pink-bak.png
+assets/charts/map-china-bak.png
