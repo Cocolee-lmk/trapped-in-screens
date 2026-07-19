@@ -1144,7 +1144,7 @@ p + p { margin-top: 1.2em; }
 .chart-pair--income {
   grid-template-columns: 1.04fr 0.96fr;
   gap: 16px;
-  align-items: center;
+  align-items: end;
 }
 .chart-pair--income .chart-figure:first-child {
   max-width: 100%;
@@ -1186,7 +1186,7 @@ p + p { margin-top: 1.2em; }
 .chart-pair--flow {
   grid-template-columns: 0.85fr 1.15fr;
   gap: 24px;
-  align-items: center;
+  align-items: end;
 }
 .chart-pair--flow .chart-figure:first-child {
   max-width: 92%;
