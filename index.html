@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=20260714c" />
-  <script src="js/main.js?v=20260713n" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=20260719bh" />
+  <script src="js/main.js?v=20260719h" defer></script>
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
@@ -34,10 +34,6 @@
   <section class="section page-section" id="intro">
     <div class="wrap">
       <div class="intro-article reveal">
-        <figure class="intro-photo">
-          <img src="assets/image1.png" alt="凌晨三点的团播直播间：舞台上的表演与后台的数据监控" />
-          <figcaption class="intro-caption">凌晨 03:00 · 团播基地直播间后台</figcaption>
-        </figure>
         <div class="intro-copy">
           <h2 class="intro-heading">引言</h2>
           <p>凌晨三点，整座城市已经沉睡。但在写字楼的第18层，5个年轻人正对着摄影机，一遍又一遍地跳着相同的舞蹈。他们的脸被聚光灯照得苍白，双眼在镜头前努力保持明亮，尽管身体早已疲惫不堪。而这样的景象，正在无数城市上演着……</p>
@@ -121,11 +117,11 @@
 
       <div class="stat-hero reveal">
         <div class="num" data-count="720" data-suffix=" 亿元">0</div>
-        <p class="desc">2025 年全年打赏总额，日均流水近 2 亿元</p>
+        <p class="desc">2025 年全年打赏总额，日均流水近 <em class="stat-hero__em">2 亿元</em></p>
       </div>
 
-      <figure class="chart-box chart-figure mid reveal chart-draw-y" style="max-width:820px;margin-inline:auto">
-        <img src="assets/charts/market-growth.png" alt="中国团播市场规模三年增长" />
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/market-growth.png?v=10" alt="中国团播市场规模三年增长" />
       </figure>
     </div>
   </section>
@@ -144,12 +140,12 @@
         <p>将团播与传统单人直播进行对比可以发现，得益于多人协作和连续互动机制的存在，团播能够持续制造新的内容刺激观看者，因而在内容丰富度、用户观看时长、互动强度以及付费转化能力等维度全面领先于传统单人直播。与此同时，同样的人力投入条件下，团播往往能够创造出数倍于单人直播的内容产出和商业回报。</p>
       </div>
 
-      <div class="chart-pair reveal">
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/compare-bars.png" alt="团播与传统单人直播核心运营指标对比" />
+      <div class="chart-pair chart-pair--compare reveal">
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-y chart-shift-up">
+          <img src="assets/charts/compare-bars.png?v=5" alt="团播与传统单人直播核心运营指标对比" />
         </figure>
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/radar-compare.png" alt="团播 vs 单人直播：多维指标对比" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-y">
+          <img src="assets/charts/radar-compare.png?v=2" alt="团播 vs 单人直播：多维指标对比" />
         </figure>
       </div>
 
@@ -176,11 +172,11 @@
       </div>
 
       <div class="chart-pair chart-pair--geo reveal">
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/map-china.png?v=2" alt="团播及MCN机构主要城市分布热力图" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-y">
+          <img src="assets/charts/map-china.png?v=7" alt="团播及MCN机构主要城市分布热力图" />
         </figure>
-        <figure class="chart-box chart-figure chart-draw-x">
-          <img src="assets/charts/cities-bar.png?v=2" alt="团播 MCN 机构地域分布" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-x">
+          <img src="assets/charts/cities-bar.png?v=3" alt="团播 MCN 机构地域分布" />
         </figure>
       </div>
       <div class="tier-grid reveal">
@@ -202,23 +198,27 @@
       <div class="prose left reveal">
         <p>团播的商业模式看似简单，但其内部的分成结构、运营逻辑和激励设计，构成了一套精密运转的利益分配机器。这台机器每一层的设计都经过了反复优化，优化的目标只有最大化从用户到平台的现金流转效率。主播在这条链路上，既是生产者，也是产品本身。</p>
         <p class="italic lead" style="font-weight:400;font-size:18px">你是一位来自四线城市、高中学历的 20 岁女生。</p>
-        <p>某天，你在招聘软件上刷到一条信息：</p>
+        <p>某天，你在招聘软件上频繁刷到某类信息：</p>
       </div>
 
-      <div class="recruit-card reveal">
-        <div class="app-bar"><span>BOSS直聘</span><span>刚刚</span></div>
-        <div class="body">
-          <span class="tag">急招</span>
-          <h4>诚招直播主播</h4>
-          <div class="salary">月入 8000–20000，上不封顶</div>
-          <ul>
-            <li>零经验 · 带薪培训</li>
-            <li>包食宿</li>
-            <li>不限学历 · 形象气质佳优先</li>
-            <li>工作地点：杭州 / 成都 / 长沙</li>
-          </ul>
+      <div class="recruit-stack" id="recruitStack" aria-label="团播招聘截图叠放展示">
+        <div class="recruit-stack__stage">
+          <figure class="recruit-shot" style="--i:0"><img src="assets/recruit/recruit-01.jpg" alt="招聘截图：tiktok团播艺人" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:1"><img src="assets/recruit/recruit-02.jpg" alt="招聘截图：舞蹈团播接受小白" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:2"><img src="assets/recruit/recruit-03.jpg" alt="招聘截图：小红书招主播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:3"><img src="assets/recruit/recruit-04.jpg" alt="招聘截图：多岗位招聘女主播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:4"><img src="assets/recruit/recruit-05.jpg" alt="招聘截图：团播孵化基地" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:5"><img src="assets/recruit/recruit-06.jpg" alt="招聘截图：舞蹈团播零基础" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:6"><img src="assets/recruit/recruit-07.jpg" alt="招聘截图：抖音小红书团播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:7"><img src="assets/recruit/recruit-08.jpg" alt="招聘截图：招团播主播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:8"><img src="assets/recruit/recruit-09.jpg" alt="招聘截图：杭州头部团播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:9"><img src="assets/recruit/recruit-10.jpg" alt="招聘截图：团播艺人可住宿" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:10"><img src="assets/recruit/recruit-11.jpg" alt="招聘截图：杭州优质团播主播" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:11"><img src="assets/recruit/recruit-12.jpg" alt="招聘截图：小红书团播Crush" loading="lazy" /></figure>
+          <figure class="recruit-shot" style="--i:12"><img src="assets/recruit/recruit-13.jpg" alt="招聘截图：小红书top团播" loading="lazy" /></figure>
         </div>
       </div>
+      <p class="recruit-stack-hint">左右滑动查看</p>
 
       <div class="prose left reveal">
         <p>这类广告在 58 同城、BOSS 直聘、抖音私信、快手的评论区到处都是。话术高度统一，瞄准的人群也高度统一。真正让你停下来的，是“包食宿”那三个字。你刚到杭州，房租吃饭通勤样样烧钱，整座城市没一个熟人。对这时候的你来说，食宿两个字比什么月入过万的“画饼”实在得多。</p>
@@ -229,7 +229,7 @@
       </div>
 
       <div class="cmd-block reveal" id="cmdBubbles">
-        <div class="label">运营指挥 · 实时对讲</div>
+        <div class="label">运营指挥 <span class="cmd-dot">·</span> 实时对讲</div>
         <div class="bubble">三号机位弹幕有人问！</div>
         <div class="bubble">二号 PK 快输了，四号帮拉票！</div>
         <div class="bubble">一号机那个大哥进来了，所有人喊名字！</div>
@@ -243,14 +243,12 @@
         <p>第一刀是平台。不同平台的抽成比例各不相同。抖音以 50% 的平台抽成位居榜首，但其庞大的流量池吸引了最多的 MCN 机构和主播。快手和小红书给主播留出了 70% 的空间，但流量规模明显不及抖音。B 站和视频号作为后来者，分成比例相对温和，但团播生态尚不成熟。算法把你推到更多人面前，也把更多人兜里的钱推到你面前，这笔钱是你站在流量池里的门票。</p>
       </div>
 
-      <div class="chart-pair chart-pair--platforms reveal">
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/platform-waffle.png" alt="头部团播资源的平台分布" />
-        </figure>
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/platform-split.png" alt="各平台团播收入分成模式对比" />
-        </figure>
-      </div>
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y chart-shift-left" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/platform-waffle.png?v=7" alt="头部团播资源的平台分布" />
+      </figure>
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/platform-split.png?v=2" alt="各平台团播收入分成模式对比" />
+      </figure>
 
       <div class="prose left reveal">
         <p>第二刀是机构。剩下的一万五，合同里白纸黑字抽走大约四分之一。你所使用的直播间、设备、投流预算……所有这些成本都写进了你的分成条款。</p>
@@ -262,11 +260,11 @@
       </div>
 
       <div class="chart-pair chart-pair--flow reveal">
-        <figure class="chart-box chart-figure chart-draw-pie">
-          <img src="assets/charts/income-pie.png" alt="团播直播间典型收入结构构成" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-pie">
+          <img src="assets/charts/income-pie.png?v=2" alt="团播直播间典型收入结构构成" />
         </figure>
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/revenue-flow.png" alt="观众打赏收入分配流程" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-y">
+          <img src="assets/charts/revenue-flow.png?v=2" alt="观众打赏收入分配流程" />
         </figure>
       </div>
 
@@ -275,8 +273,8 @@
         <p>但这个数字已经是团播行业前 15% 的水平。跟你同批进来的大多数新人主播的月流水在五千到一万五之间，按同样的缩水比例，到手通常只有一千五到四千块。现在的你理解了为什么数据说 95.2% 的团播主播月收入不到五千。与努力无关，从分成模式形成的第一天起，二八定律下，底部的人就注定分不到大蛋糕。</p>
       </div>
 
-      <figure class="chart-box chart-figure mid reveal chart-draw-y" style="max-width:760px;margin-inline:auto">
-        <img src="assets/charts/waterfall.png" alt="从打赏流水到实际到手：腰部主播真实账本" />
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y" style="max-width:760px;margin-inline:auto">
+        <img src="assets/charts/waterfall.png?v=3" alt="从打赏流水到实际到手：腰部主播真实账本" />
       </figure>
 
       <div class="prose left reveal">
@@ -284,8 +282,8 @@
         <p>机器不停，流水线上的原材料总是不缺的。</p>
       </div>
 
-      <figure class="chart-box chart-figure reveal chart-draw-x">
-        <img src="assets/charts/mcn-flow.png" alt="MCN 团播工业化运作流程" />
+      <figure class="chart-box chart-figure chart-figure--blend chart-figure--mcn reveal chart-draw-x">
+        <img src="assets/charts/mcn-flow.png?v=7" alt="MCN 团播工业化运作流程" />
       </figure>
     </div>
   </section>
@@ -301,13 +299,13 @@
         <p>透过数据，我们看到了一个在时代风口高速发展的行业，市场规模不断扩大、商业模式愈发成熟、MCN 机构遍布全国。但这些数据并没有讲述这个行业里“人”的故事。屏幕里展示的，是观众习以为常的活力、热闹与光鲜亮丽，但其背后，是多数团播从业者们不堪的生存现实。</p>
       </div>
 
-      <figure class="chart-box chart-figure mid reveal chart-draw-y">
-        <img src="assets/charts/dual-face.png?v=2" alt="屏幕的双重面孔：展示的 vs 真实的" />
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y chart-shift-down-10">
+        <img src="assets/charts/dual-face.png?v=3" alt="屏幕的双重面孔：展示的 vs 真实的" />
       </figure>
 
       <h3 class="sub-title reveal">工作日记录</h3>
       <div class="prose left reveal">
-        <p>团播行业生态中，主播、运营、舞蹈老师等不同岗位彼此衔接，共同支撑着一场直播的顺利完成。每个人的工作内容各不相同，但他们都拥有一个共同点——昼夜颠倒地拼搏。我们在社交媒体平台追踪观察了多位团播从业者公开分享的工作经历，整理了三个典型岗位的一日时间线。</p>
+        <p>团播行业生态中，主播、运营、舞蹈老师等不同岗位彼此衔接，共同支撑着一场直播的顺利完成。每个人的工作内容各不相同，但他们都拥有一个共同点——昼夜颠倒地拼搏。我们在社交媒体平台追踪观察了多位团播从业者公开分享的工作经历，整理了三个典型岗位的一日时间线。<span class="inline-hint">（点击可切换查看）</span></p>
       </div>
 
       <div class="reveal">
@@ -318,20 +316,20 @@
         </div>
 
         <div class="tab-panel active" id="tab-host">
-          <figure class="chart-figure chart-draw-x" style="max-width:920px;margin-inline:auto">
-            <img src="assets/charts/timeline-host.png" alt="团播主播一日时间线" />
+          <figure class="chart-figure chart-figure--blend chart-draw-x" style="max-width:920px;margin-inline:auto">
+            <img src="assets/charts/timeline-host.png?v=2" alt="团播主播一日时间线" />
           </figure>
         </div>
 
         <div class="tab-panel" id="tab-ops">
-          <figure class="chart-figure chart-draw-x" style="max-width:920px;margin-inline:auto">
-            <img src="assets/charts/timeline-ops.png" alt="团播运营一日时间线" />
+          <figure class="chart-figure chart-figure--blend chart-draw-x" style="max-width:920px;margin-inline:auto">
+            <img src="assets/charts/timeline-ops.png?v=2" alt="团播运营一日时间线" />
           </figure>
         </div>
 
         <div class="tab-panel" id="tab-dance">
-          <figure class="chart-figure chart-draw-x" style="max-width:920px;margin-inline:auto">
-            <img src="assets/charts/timeline-dance.png" alt="团播舞蹈老师一日时间线" />
+          <figure class="chart-figure chart-figure--blend chart-draw-x" style="max-width:920px;margin-inline:auto">
+            <img src="assets/charts/timeline-dance.png?v=2" alt="团播舞蹈老师一日时间线" />
           </figure>
         </div>
       </div>
@@ -342,11 +340,11 @@
       </div>
 
       <div class="chart-pair chart-pair--income reveal">
-        <figure class="chart-box chart-figure chart-draw-x">
-          <img src="assets/charts/income-dist.png" alt="直播行业从业者月收入分布比例" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-x">
+          <img src="assets/charts/income-dist.png?v=5" alt="直播行业从业者月收入分布比例" />
         </figure>
-        <figure class="chart-box chart-figure chart-draw-pie">
-          <img src="assets/charts/income-tier.png" alt="分层收入图" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-pie">
+          <img src="assets/charts/income-tier.png?v=2" alt="分层收入图" />
         </figure>
       </div>
       <p class="big-conclusion reveal">95.2% 的团播主播月收入不足 5000 元</p>
@@ -356,7 +354,7 @@
         <p>工作强度和收入差距只是团播行业的一面，真正让许多主播难以抽身的，是镜头之外那一纸合同。直播时长、出勤天数、违约责任、账号归属、竞业限制、表情管理制度等条款共同构成了一套完整的约束体系。当直播逐渐成为一种流水线式的内容生产，合同约束的早已不仅是从业者的工作本身，更约束着他们的职业选择与个人生活。</p>
       </div>
       <figure class="chart-box chart-figure chart-figure--cloud tall reveal chart-draw-y" style="max-width:420px;margin-inline:auto">
-        <img src="assets/charts/contract-cloud.png?v=4" alt="合同条款词云：约束与压迫" />
+        <img src="assets/charts/contract-cloud.png?v=8" alt="合同条款词云：约束与压迫" />
       </figure>
 
       <h3 class="sub-title reveal">职业生命周期</h3>
@@ -365,7 +363,7 @@
       </div>
 
       <figure class="chart-box chart-figure reveal chart-draw-y" style="max-width:720px;margin-inline:auto">
-        <img src="assets/charts/lifecycle.png" alt="团播主播职业生命周期与流向" />
+        <img src="assets/charts/lifecycle.png?v=9" alt="团播主播职业生命周期与流向" />
       </figure>
 
       <h3 class="sub-title reveal">典型案例</h3>
@@ -374,7 +372,7 @@
       </div>
 
       <div class="case-grid reveal">
-        <article class="case-card" data-case>
+        <article class="case-card case-card--head" data-case>
           <button class="case-head" type="button">
             <div>
               <span class="case-tag head">头部主播</span>
@@ -393,7 +391,7 @@
             </div>
           </div>
         </article>
-        <article class="case-card" data-case>
+        <article class="case-card case-card--mid" data-case>
           <button class="case-head" type="button">
             <div>
               <span class="case-tag mid">腰部主播</span>
@@ -412,7 +410,7 @@
             </div>
           </div>
         </article>
-        <article class="case-card" data-case>
+        <article class="case-card case-card--gone" data-case>
           <button class="case-head" type="button">
             <div>
               <span class="case-tag gone">已离职</span>
@@ -432,9 +430,10 @@
           </div>
         </article>
       </div>
+      <p class="case-hint reveal">点击可查看详情</p>
 
-      <figure class="chart-box chart-figure reveal chart-draw-y chart-shift-right" style="max-width:560px;margin-inline:auto">
-        <img src="assets/charts/case-radar.png" alt="三个案例多维度对比：同一块屏幕，三种人生" />
+      <figure class="chart-box chart-figure chart-figure--blend reveal chart-draw-y chart-shift-right" style="max-width:560px;margin-inline:auto">
+        <img src="assets/charts/case-radar.png?v=18" alt="三个案例多维度对比：同一块屏幕，三种人生" />
       </figure>
     </div>
   </section>
@@ -442,7 +441,7 @@
   <!-- ===== Module 6: Chapter 4 ===== -->
   <section class="section page-section" id="ch4">
     <div class="wrap">
-      <h2 class="section-title">第四章　<span class="brush-mark">镜子<svg class="brush-ring" viewBox="0 0 140 78" aria-hidden="true"><path d="M72 9c28 1 52 14 55 32 3 17-14 33-42 36-29 3-58-7-64-24C15 36 28 14 52 10c7-1 14-1 20-1"/><path class="brush-soft" d="M70 12c25 2 46 15 48 29 2 15-12 28-36 31-26 3-52-5-58-20-6-14 6-30 28-34 6-1 12-1 18-1"/><path class="brush-ticks" d="M68 7c-2 .5-1 2 .5 2.2M98 22c1.2-.8 2.5.4 1.8 1.5M118 48c.8 1-.5 2.2-1.5 1.4M40 62c-1.2.6-2.2-.6-1.4-1.5M22 35c-1-.3-1.2-1.8 0-2"/></svg></span>・被照见的争议与未来<img class="ch4-mirror" src="assets/ch4-mirror.png?v=3" alt="" /></h2>
+      <h2 class="section-title">第四章　<span class="brush-mark">镜子<svg class="brush-ring" viewBox="0 0 140 78" aria-hidden="true"><path d="M72 9c28 1 52 14 55 32 3 17-14 33-42 36-29 3-58-7-64-24C15 36 28 14 52 10c7-1 14-1 20-1"/><path class="brush-soft" d="M70 12c25 2 46 15 48 29 2 15-12 28-36 31-26 3-52-5-58-20-6-14 6-30 28-34 6-1 12-1 18-1"/><path class="brush-ticks" d="M68 7c-2 .5-1 2 .5 2.2M98 22c1.2-.8 2.5.4 1.8 1.5M118 48c.8 1-.5 2.2-1.5 1.4M40 62c-1.2.6-2.2-.6-1.4-1.5M22 35c-1-.3-1.2-1.8 0-2"/></svg></span>・被照见的争议与未来<img class="ch4-mirror" src="assets/ch4-mirror.png?v=5" alt="" /></h2>
 
       <div class="prose left reveal">
         <p>走出直播间，关于团播的讨论才真正开始。随着行业规模不断扩大、年轻从业者不断涌入，团播已不再只是屏幕里的娱乐狂欢，更催促着人们反思其中的数字劳动、行业风险、治理监管和 AI 时代变局等一系列现实议题。此时的屏幕像一面镜子，照见整个行业的争议与未来。</p>
@@ -453,8 +452,8 @@
         <p>情绪劳动带来的心理损耗，正成为团播行业中最值得关注的“隐形工伤”。与传统意义上的体力劳动不同，团播主播的工作要求她们不断输出热情、活力与亲近感。无论当天的身体状态如何、情绪是否低落，只要镜头亮起，她们都需要保持微笑、回应互动、调动直播间氛围。这种将个人情绪纳入工作内容，并持续进行管理和表达的过程，被称为<span class="highlight">情绪劳动（Emotional Labor）</span>。这种长期高频的情绪输出，让不少从业者受了“工伤”。相比身体疲劳，它没有明显的伤口，却会以焦虑、失眠、情绪耗竭等形式不断累积。</p>
       </div>
 
-      <figure class="chart-box chart-figure mid reveal chart-draw-x" style="max-width:820px;margin-inline:auto">
-        <img src="assets/charts/mental-health.png" alt="团播主播心理健康状况调查" />
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-x" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/mental-health.png?v=5" alt="团播主播心理健康状况调查" />
       </figure>
 
       <h3 class="sub-title reveal">行业风险</h3>
@@ -462,25 +461,23 @@
         <p>近年来，主播与 MCN 之间的合同纠纷不断增加，高额违约金、漫长的诉讼程序和极低的胜诉率，共同构成了团播行业最现实的风险。新人主播平均月收入约 5000 元，而合同中的违约金却往往高达数十万元，两者之间形成近 200 倍的落差，收入与赔偿严重倒挂。</p>
       </div>
 
-      <div class="chart-pair reveal">
-        <figure class="chart-box chart-figure chart-draw-y">
-          <img src="assets/charts/leverage.png" alt="代价：收入与赔偿严重倒挂" />
-        </figure>
-        <figure class="chart-box chart-figure chart-draw-x">
-          <img src="assets/charts/dispute-trend.png" alt="MCN–主播合同纠纷趋势" />
-        </figure>
-      </div>
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-y" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/leverage.png?v=8" alt="代价：收入与赔偿严重倒挂" />
+      </figure>
+      <figure class="chart-box chart-figure chart-figure--blend mid reveal chart-draw-x" style="max-width:820px;margin-inline:auto">
+        <img src="assets/charts/dispute-trend.png?v=3" alt="MCN–主播合同纠纷趋势" />
+      </figure>
 
       <div class="prose left reveal">
         <p>统计显示，在主播合同纠纷中，机构胜诉占 97%，主播实现无责解约的比例仅约 3%。进一步分析那些少数胜诉案件会发现，主播获得法院支持，多与机构拖欠收益、停止履约、劳动关系认定等情形有关，而非合同本身被认定无效。</p>
       </div>
 
       <div class="chart-pair chart-pair--win reveal">
-        <figure class="chart-box chart-figure chart-draw-pie">
-          <img src="assets/charts/win-rate.png" alt="困境：极低的主播解约胜诉率" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-pie">
+          <img src="assets/charts/win-rate.png?v=5" alt="困境：极低的主播解约胜诉率" />
         </figure>
-        <figure class="chart-box chart-figure chart-draw-x">
-          <img src="assets/charts/win-reasons.png" alt="主播胜诉原因统计" />
+        <figure class="chart-box chart-figure chart-figure--blend chart-draw-x chart-shift-down">
+          <img src="assets/charts/win-reasons.png?v=5" alt="主播胜诉原因统计" />
         </figure>
       </div>
 
@@ -489,8 +486,8 @@
         <p>在团播行业发展过程中，诱导打赏、低俗内容、MCN 管理等问题始终争议不断。对此，国家监管部门频频出手。从整治打赏乱象、规范直播内容，到加强 MCN 治理、完善主播权益保障，政策不断回应行业发展中的新问题，为团播行业划定更加清晰的发展边界。</p>
       </div>
 
-      <figure class="chart-box chart-figure reveal chart-draw-y chart-shift-right">
-        <img src="assets/charts/governance.png" alt="治理与监管时间线 2021–2026" />
+      <figure class="chart-box chart-figure chart-figure--blend reveal chart-draw-y chart-shift-right">
+        <img src="assets/charts/governance.png?v=2" alt="治理与监管时间线 2021–2026" />
       </figure>
 
       <h3 class="sub-title reveal">AI 时代的新变局</h3>
@@ -602,10 +599,16 @@
   <!-- ===== Module 8: Closing ===== -->
   <section class="closing page-section" id="closing">
     <div class="closing-hero">
-      <div class="closing-hero__bg" aria-hidden="true"></div>
+      <img
+        class="closing-hero__bg"
+        src="assets/closing-bg.png?v=10"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+      />
       <img
         class="closing-hero__figure"
-        src="assets/closing-figure-overlay.png?v=1"
+        src="assets/closing-figure-overlay.png?v=2"
         alt=""
         aria-hidden="true"
         draggable="false"

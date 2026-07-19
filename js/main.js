@@ -197,6 +197,64 @@
     bubbleObs.observe(cmdBlock);
   }
 
+  /* ---------- Recruit screenshot stack ---------- */
+  const recruitStack = document.getElementById("recruitStack");
+  if (recruitStack) {
+    const recruitObs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((en) => {
+          if (!en.isIntersecting) return;
+          requestAnimationFrame(() => {
+            recruitStack.classList.add("is-on");
+          });
+          recruitObs.unobserve(en.target);
+        });
+      },
+      { root: observerRoot, threshold: 0.28, rootMargin: "0px 0px -8% 0px" }
+    );
+    recruitObs.observe(recruitStack);
+
+    // 仅左右拖动滑动；纵向滚轮交给页面，不再转成横滑
+    let dragging = false;
+    let startX = 0;
+    let startScroll = 0;
+    recruitStack.addEventListener("pointerdown", (e) => {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      dragging = true;
+      startX = e.clientX;
+      startScroll = recruitStack.scrollLeft;
+      recruitStack.classList.add("is-dragging");
+      try { recruitStack.setPointerCapture(e.pointerId); } catch (_) {}
+    });
+    recruitStack.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      // 只有明显左右移动时才横向滚动，避免轻微抖动
+      if (Math.abs(dx) < 2) return;
+      recruitStack.scrollLeft = startScroll - dx;
+    });
+    const endDrag = (e) => {
+      if (!dragging) return;
+      dragging = false;
+      recruitStack.classList.remove("is-dragging");
+      try { recruitStack.releasePointerCapture(e.pointerId); } catch (_) {}
+    };
+    recruitStack.addEventListener("pointerup", endDrag);
+    recruitStack.addEventListener("pointercancel", endDrag);
+    // 只响应横向滚轮 / Shift+滚轮，不劫持上下滚动
+    recruitStack.addEventListener(
+      "wheel",
+      (e) => {
+        const horizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey;
+        if (!horizontal) return;
+        if (recruitStack.scrollWidth <= recruitStack.clientWidth + 4) return;
+        recruitStack.scrollLeft += e.shiftKey ? e.deltaY : e.deltaX;
+        e.preventDefault();
+      },
+      { passive: false }
+    );
+  }
+
   /* ---------- AI rows ---------- */
   const aiList = document.getElementById("aiList");
   if (aiList) {

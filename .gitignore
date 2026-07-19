@@ -9,6 +9,17 @@ Thumbs.db
 *_bak.png
 assets/charts/_preview*
 assets/charts/*-bak.png
+assets/charts/*-bgbak.png
 assets/closing-bg-male-bak.png
 assets/charts/contract-cloud-pink-bak.png
 assets/charts/map-china-bak.png
+# 更多本地备份命名
+*-userbak.png
+*-coolbak.png
+*-stagebak.png
+*-citybak.png
+*-user-src.png
+*-user-hi.png
+*-user.png
+assets/charts/*-userbak.png
+*-pre-redbak.png
